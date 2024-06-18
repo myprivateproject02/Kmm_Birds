@@ -23,7 +23,7 @@ class GetBirdsUseCase(
             emit(Resource.Success(birdImageList))
         } catch (e: IOException) {
             println("IOException called $e")
-            emit(Resource.Error("Couldn't reach server. Check your internet connection."))
+            emit(Resource.Error("Something Went Wrong!"))
         }
     }.flowOn(Dispatchers.IO)
 }
