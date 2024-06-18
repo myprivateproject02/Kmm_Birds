@@ -1,16 +1,31 @@
-This is a Kotlin Multiplatform project targeting Android, iOS, Desktop.
+# Kmm Birds
 
-* `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - `commonMain` is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    `iosMain` would be the right folder for such calls.
+##### This is a Kotlin Multiplatform project targeting Android, iOS, Desktop.
 
-* `/iosApp` contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform, 
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
+<!------------
+-->
 
+### 👉  Some ScreenShorts
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+<p align="center">
+  <img src="https://github.com/myprivateproject02/Kmm_Birds/blob/master/ss/android.png" width="250">
+  <img src="https://github.com/myprivateproject02/Kmm_Birds/blob/master/ss/iphone.png" width="250">
+  <img src="https://github.com/myprivateproject02/Kmm_Birds/blob/master/ss/window.jpg" width="250">
+</p>
+<br>
 
-./gradlew :composeApp:run
+<!------------
+-->
+
+### Technologies
+
+The data displayed by the app is from [sebi.io Collection API](https://sebi.io/demo-image-api/).
+
+The app uses the following multiplatform dependencies in its implementation:
+
+- [Compose Multiplatform](https://jb.gg/compose) for UI
+- [Ktor](https://ktor.io/) for networking
+- [kotlinx.serialization](https://github.com/Kotlin/kotlinx.serialization) for JSON handling
+- [Kamel](https://github.com/Kamel-Media/Kamel) for image loading
+- [Koin](https://github.com/InsertKoinIO/koin) for dependency injection
+- [Voyager](https://github.com/adrielcafe/voyager) for navigation and screen models
